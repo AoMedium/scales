@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Scales</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="grade" class="horizontal-center">clarinet: grade 8</div>
+
+	<canvas class="horizontal-center"></canvas>
+
+	<div id="scale" class="horizontal-center">scale</div>
+	<div id="subblock" class="horizontal-center">
+		<div id="type">type</div> 
+		<div class="separator"></div>
+		<div id="articulation">articulation</div>
+	</div>
+	<div id="octaves" class="horizontal-center">octaves</div>
+	<div id="subblock2" class="horizontal-center">
+		<button id="bpm" onclick="ToggleMetronome();">♩ = 160</button>
+	</div>
+	<button id="genNewBtn" class="horizontal-center" onclick="Randomise();">
+		<svg id="svgBtn">
+			<path d="M0,0 25,20 50,0" style="stroke:#222;fill:none"></path>
+		</svg>
+	</button>
+	<div id="footer">scales v0.0 by 15240</div>
+	<script src="canvas.js"></script>
+	<script src="scales.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+body {
+	margin: 0 auto;
+	overflow: hidden;
+	user-select: none; /* does this work */
+	font-family: Helvetica;
+	font-weight: lighter;
+
+	font-variant-caps: small-caps;
+	letter-spacing: 2px;
+}
+canvas {
+	z-index: 2;
+	top: 25%;
+	width: 250px;
+	height: 80px;
+}
+button {
+	outline: none;
+}
+#footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 10px;
+
+	font-size: 15px;
+	color: #555;
+}
+
+.horizontal-center {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#grade {
+	top: 15%;
+	font-size: 20px;
+}
+
+#scale {
+	top: 40%;
+	text-align: center;
+
+	font-size: 40px;
+	color: rgb(26, 163, 83);
+}
+
+#subblock {
+	display: flex;
+	top: 47%;
+	height: 40px;
+
+	align-items: center;
+	text-align: center;
+	font-size: 18px;
+}
+
+.separator {
+	display: inline-block;
+	margin-left: 15px;
+	margin-right: 15px;
+	width: 1px;
+	height: 100%;
+
+	background-image: linear-gradient(0deg, rgba(0, 0, 0,0), #000, rgba(0,0,0,0));
+}
+
+#type {
+	display: inline-block;
+}
+
+#articulation {
+	display: inline-block;
+}
+
+#octaves {
+	position: absolute;
+	bottom: 44%;
+	font-size: 12px;
+}
+
+#subblock2 {
+	bottom: 30%;
+	text-align: center;
+}
+#bpm {
+	margin: 15px 0px;
+	padding: 5px 10px;
+	background-color: transparent;
+	border: none;
+
+	font-size: 20px;
+	color: rgb(219, 74, 120);
+
+	letter-spacing: 0px;
+
+	transition: background-color 0.2s;
+}
+#bpm:hover {
+	background-color: #eee;
+}
+
+#svgBtn {
+	width: 50px;
+	height: 20px;
+
+	transition: transform 0.5s;
+}
+#svgBtn:hover {
+	transform: translateY(5px);
+}
+
+#genNewBtn {
+	position: absolute;
+	bottom: 15%;
+	padding: 0;
+
+	border: none;
+	background-color: transparent;
+}
